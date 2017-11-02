@@ -45,7 +45,11 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 set term=xterm-256color
 set nu
+set paste
 set nowrap
+set showmode
+set ruler
 syntax on
 set clipboard=unnamed
 set backspace=2
+imap jj <ESC>
