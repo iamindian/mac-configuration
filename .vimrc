@@ -9,7 +9,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
+Plugin 'jistr/vim-nerdtree-tabs'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -28,7 +28,9 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'Chiel92/vim-autoformat'
-
+Plugin 'posva/vim-vue'
+Plugin 'groenewege/vim-less'
+Plugin 'scrooloose/nerdtree'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -44,12 +46,22 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 set term=xterm-256color
+set tabstop=4 shiftwidth=4 expandtab
 set nu
 set paste
-set nowrap
+"set nowrap
+set wrap linebreak nolist
 set showmode
+set cursorline
+set statusline+=%F
 set ruler
 syntax on
 set clipboard=unnamed
 set backspace=2
 imap jj <ESC>
+map <C-n> :NERDTreeToggle<CR>
+map <Leader>n <plug>NERDTreeTabsToggle<CR>
+map  <C-l> :tabn<CR>
+map  <C-h> :tabp<CR>
+"map  <C-n> :tabnew<CR>
+set laststatus=2

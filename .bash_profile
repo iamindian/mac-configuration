@@ -1,4 +1,4 @@
-PS1="[\d \t] \u@\h\n\w\$ "
+PS1="\u$"
 alias ls="ls -Gl"
 alias vi="vim"
 set -o vi
@@ -11,3 +11,7 @@ export radar=/Users/darren/ds-app-radar-v2
 export radar_less=/Users/darren/ds-app-radar-v2/www/src/less
 export backstage=/Users/darren/ds-app-radar-v2/www/src/app/pages/backstage
 export tmp=/Users/darren/tmp
+export teemall=/Users/darren/teemall/ds-teemall-app-front
+export tmop=/Users/darren/teemall/ds-teemall-app-front/src/app/pages/system/operation
+export intel=/Users/darren/intel/ds-intel-app-front
+export miniso=/Users/darren/miniso/ds-miniso-app-front
