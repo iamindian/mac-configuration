@@ -15,3 +15,10 @@ export teemall=/Users/darren/teemall/ds-teemall-app-front
 export tmop=/Users/darren/teemall/ds-teemall-app-front/src/app/pages/system/operation
 export intel=/Users/darren/intel/ds-intel-app-front
 export miniso=/Users/darren/miniso/ds-miniso-app-front
+# Avoid duplicates
+export HISTCONTROL=ignoredups:erasedups  
+# When the shell exits, append to the history file instead of overwriting it
+shopt -s histappend
+
+# After each command, append to the history file and reread it
+export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
